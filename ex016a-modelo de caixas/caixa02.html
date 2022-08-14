@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gruping Tags</title>
+    <style>
+        .centralizartexto {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: burlywood;
+            margin: 0px;
+        }
+
+        article {
+            background-color: rgb(229, 198, 160);
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: rgb(230, 186, 132);
+        }
+
+        header {
+            background-color: bisque;
+        }
+
+        nav {
+            background-color: rgb(227, 160, 60);
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.515);
+            /* -inset/outset
+               -deslocamento horizontal
+               -deslocamento vertical
+               -blur
+               -spread
+               -color
+               */
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: antiquewhite;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        h2 {
+            margin-top: 0px;
+        }
+
+        main {
+            background-color: bisque;
+            border-radius: 10px 0px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.396);
+        }
+
+        footer {
+            background-color: rgb(160, 128, 88);
+            color: rgb(250, 240, 228);
+            text-align: center;
+            padding: 4px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        div#bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header class="centralizartexto">
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main class="centralizartexto">
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia Braba</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime perferendis, non, molestias dolores amet itaque exercitationem minima consectetur mollitia sequi natus doloremque iste! Molestias quas itaque rem rerum totam commodi.</p>
+                <aside>
+                    <p>texto perifético</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Gabriel de Araujo</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

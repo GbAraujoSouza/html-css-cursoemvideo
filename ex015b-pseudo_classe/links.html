@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoert" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*  SELETORES PERSONALIZADOS
+            #   = id
+            .   = class
+            :   = pseudo-class
+            ::  = pseudo-element
+            >   = children
+        */
+        a {
+            color: lightcoral;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        p {
+            display: inline;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        a:active {
+            color: blue;
+        }
+
+        .link p::after {
+            content: " [link]";
+            color: gray;
+            font-weight: lighter;
+            text-decoration: none;
+        }
+
+        .link-especial p::before {
+            content: "⇒ ";
+            
+        }
+        
+        .link-especial p::after {
+            content: " [link]";
+            color: gray;
+            font-weight: lighter;
+        }
+        
+        .link-especial ::after {
+            content: " ⇐";
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalzando Links</h1>
+    <ul>
+        <li class="link"><a href="https://github.com/GbAraujoSouza" target="_blank"><p>Repositório GitHub</p></a></li>
+        <li class="link-especial"><a href="https://www.youtube.com/c/mitocw" target="_blank"><p>Canal do Youtube favorito</p></a></li>
+        <li class="link"><a href="https://www.cursoemvideo.com" target="_blank"><p>Site do CursoemVideo</p></a></li>
+    </ul>
+</body>
+</html>

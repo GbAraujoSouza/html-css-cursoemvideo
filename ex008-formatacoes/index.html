@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Texto</title>
+    <style>
+        mark{
+            background-color: rgb(169, 202, 78);
+        }
+    </style>
+</head>
+<body>
+    <h1>Principais Formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Nessa frase tem uma palavra em <b>negrito</b> usando a &lt;b&gt;</p> <!-- NÃO SEMANTICA-->
+    <p>Nessa frase tem um <strong>termo em negrito</strong> utilizando a tag &lt;strong&gt;</p>
+
+    <h2>Itálico / Enfase</h2>
+    <p>Nessa frase tem um <i>termo em itálico</i> utilizado a tag &lt;i&gt;</p> <!--NÃO SEMANTICA-->
+    <P>Nesta frase temos um <em>termo em itálico</em> utilizando a tag &lt;em&gt;</P>
+    <h2>Texto Marcado</h2>
+    <p>Nessa frase temos um <mark>termo marcado</mark> utilizando a tag &lt;mark&gt;</p>
+    <h2>Texto Grande e Pequeno</h2>
+    <p>Estamos criando um texto pequeno nesse paragrafo.</p>
+    <h2>Texto excluido</h2>
+    <p>Podemos marcar <del>um texto como excluido</del> utilizandp a tag DEL</p>
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar <ins>um texto como inserido</ins> utilizando a tag INS</p>
+    <p>Vale lembrar que também é possível ulizizar a tag U <u>para sublinhinhar o texto</u>, porém essa não é uma tag semantica.</p>
+    <h2>Texto sobre escrito e subescrito</h2>
+    <p>Inserir textos como x<sup>10</sup>+3, usamos a tag SUP</p>
+    <p>E para inserir textos como H<sub>2</sub>O, usamos a tag SUB</p>
+    <h2>Trecho de códogo</h2>
+    <p>podemos inserir um trecho de um código usando duas tags em conjunto: &lt;pre&gt;&lt;code&gt;</p>
+    <pre><code>#include "raylib.h"
+#include <iostream>
+int main()
+
+{	// Windows dimensions
+	int width{800};
+	int height{450};
+	InitWindow(width,height, "Joguinho da Bolinha");
+
+	// Circle parameters
+	int circleX{200}; 
+	int circleY{200};
+	int circleRadious{25};
+
+	// Circle edges
+	int l_circleX{ circleX - circleRadious };
+	int r_circleX{ circleX + circleRadious };
+	int u_circleY{ circleY - circleRadious };
+	int b_circleY{ circleY + circleRadious };
+    </code></pre>
+</body>
+</html>
